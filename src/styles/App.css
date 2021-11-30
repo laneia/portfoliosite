@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.experience-container {
+  display: flex;
+  flex-direction: row;
+} 
+
+.exp-cards-container {
+  border: 2px solid black;
+  width: 70%;
+}
 
 /* @keyframes {
   from {
