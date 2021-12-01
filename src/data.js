@@ -153,3 +153,122 @@ export const ProjectData = [
         technologies: "react and such"
     }
 ]
+
+export const SkillData = [
+    {
+        title: "Ruby",
+        photo: "https://i.imgur.com/tCqg3HU.jpg",
+    },
+    {
+        title: "Rails",
+        photo: "https://i.imgur.com/pZtqsRM.png",
+    },
+    {
+        title: "JavaScript",
+        photo: "https://i.imgur.com/Q9P8Hac.png",
+    },
+    {
+        title: "AWS",
+        photo: "https://i.imgur.com/xgkTZS0.jpg",
+    },
+    {
+        title: "React.js",
+        photo: "https://i.imgur.com/WlkyT3e.png",
+    },
+    {
+        title: "Docker",
+        photo: "https://i.imgur.com/oE0z9u2.png",
+    },
+    {
+        title: "Kubernetes",
+        photo: "https://i.imgur.com/spgjouC.png",
+    },
+    {
+        title: "Go",
+        photo: "https://i.imgur.com/BpiJrEL.png",
+    },
+    {
+        title: "Datadog",
+        photo: "https://i.imgur.com/ywOb7IP.png",
+    },
+    {
+        title: "Grafana",
+        photo: "https://i.imgur.com/QpLf2yA.jpg",
+    },
+    {
+        title: "Wavefront",
+        photo: "https://i.imgur.com/y5myfSP.png",
+    },
+    {
+        title: "Elasticsearch",
+        photo: "https://i.imgur.com/AkZy7BG.png",
+    },
+    {
+        title: "PostgresQL",
+        photo: "https://i.imgur.com/JI955nx.png",
+    },
+    {
+        title: "Redis",
+        photo: "https://i.imgur.com/VgMA1R4.jpg",
+    },
+    {
+        title: "GraphQL",
+        photo: "https://i.imgur.com/dh0Tktu.png",
+    },
+    {
+        title: "Scrum",
+        photo: "https://i.imgur.com/sRxggsZ.jpg",
+    },
+    {
+        title: "Agile",
+        photo: "https://i.imgur.com/mWtiIEh.png",
+    },
+    {
+        title: "Java",
+        photo: "https://i.imgur.com/H7GlTRH.png",
+    },
+    {
+        title: "HTML",
+        photo: "https://i.imgur.com/f8ab8PH.png",
+    },
+    {
+        title: "CSS",
+        photo: "https://i.imgur.com/j0NoZ95.png",
+    },
+    {
+        title: "RESTful APIs",
+        photo: "https://i.imgur.com/8AxWz68m.png",
+    },
+    {
+        title: "SQL",
+        photo: "https://logodix.com/logo/542135.jpg",
+    },
+    {
+        title: "Jira",
+        photo: "https://i.imgur.com/8voNGCw.jpg",
+    },
+    {
+        title: "Terraform",
+        photo: "https://i.imgur.com/BEs2EIA.jpg",
+    },
+    {
+        title: "Kafka",
+        photo: "https://i.imgur.com/lBnU8p3.jpg",
+    },
+    {
+        title: "Snowflake",
+        photo: "https://i.imgur.com/EfTWqwt.png",
+    },
+    {
+        title: "RabbitMQ",
+        photo: "https://i.imgur.com/KoCXzav.jpg",
+    },
+    {
+        title: "TypeScript",
+        photo: "https://i.imgur.com/5YzA9yA.png",
+    },
+    {
+        title: "Honeycomb",
+        photo: "https://i.imgur.com/uYtRdCw.png",
+    }
+]
