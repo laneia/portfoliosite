@@ -2,22 +2,12 @@ const About = () => {
     
     return (
         <div id='about'>
+            <h1>about me</h1>
             <div>
-                <h1>about me</h1>
-                <p>
-                    such work history
-
-                    such hobbies
-
-                    much wow
-
-                    you hire me
-                </p>
-            </div>
-            <div>
-                <img  src="https://i.imgur.com/6kzf7GXm.jpg" alt="laneia avatar"/>
-                <div>
-                    box
+                <div>such work history such hobbies much wow you hire me</div>
+                <div className='profile-container'>
+                    <div><img  src="https://i.imgur.com/6kzf7GXm.jpg" alt="laneia avatar"/></div>
+                    
                 </div>
             </div>
         </div>
