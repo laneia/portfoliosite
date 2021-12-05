@@ -1,11 +1,11 @@
 const ProjectCard = ({title, description, photo, link, technologies}) => {
 
     return (
-        <div>
+        <div className="project-card">
             <a href={link} target="_blank" rel="noreferrer">
-                <div>
+                <div className="project-container">
                     <img src={photo} alt="projects you cant see" />
-                    <div>
+                    <div className="project-info">
                         <h1>{title}</h1>
                         <h2>{technologies}</h2>
                         <p>{description}</p>

@@ -7,19 +7,23 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 
 import SideNav from './components/SideNav'
+import TopNav from './components/TopNav';
 
 function App() {
   return (
     <div className="App">
-      <SideNav />
-      <main>
-        <Landing/>
-        <About/>
-        <Experience/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
-      </main>
+      <TopNav />
+      <div className="bottom-app">
+        <SideNav />
+        <main>
+          <Landing/>
+          <About/>
+          <Experience/>
+          <Skills/>
+          <Projects/>
+          <Contact/>
+        </main>
+      </div>
     </div>
   );
 }

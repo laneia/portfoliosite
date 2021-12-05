@@ -48,8 +48,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label>
-              htmlFor="message"
+            <label htmlFor="message">
               Message
             </label>
             <textarea

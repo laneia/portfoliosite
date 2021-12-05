@@ -1,47 +1,55 @@
 import { Route, Routes, Link } from "react-router-dom"
+import { useState } from "react"
 import ExperienceCard from '../components/ExperienceCard'
 import { ExperienceData } from '../data'
 
 const Experience = () => {
+    const [clickedJob, setClickedJob] = useState(ExperienceData[0])
+    const [clicked, toggleClicked] = useState(false)
+    
+    const handleClick = async (e) => {
+        await e 
+        if (e.type === "click") {
+            setClickedJob(ExperienceData[e.target.id - 1])
+            toggleClicked(true)
+        }
+    }
 
     return (
-        <div id="experience">
+        <div id="experience" >
             <h1>Experience</h1>
             <div className='experience-container'>         
-                <nav >
+                <nav onClick={(e) => (e.target.id >= 1 && e.target.id <= 10) && handleClick(e)}>
+                    <h1>Software Engineering</h1>
                     <div>
-                        Software Engineering
-                        <Link to={`/experience/1`}><p>Full time</p></Link>
-                        <Link to={`/experience/2`}><p>Internship</p></Link>
-                        <Link to={`/experience/3`}><p>Freelance</p></Link>
+                        <Link to={`/experience/1`}><p id={1}>Full time</p></Link>
+                        <Link to={`/experience/2`}><p id={2}>Internship</p></Link>
+                        <Link to={`/experience/3`}><p id={3}>Freelance</p></Link>
                     </div>
+                    <h1>Research</h1>    
                     <div>
-                        Research
-                        <Link to={`/experience/4`}><p>USDA</p></Link>
-                        <Link to={`/experience/5`}><p>Research Foundation in Tropical Diseases</p></Link> 
+                        <Link to={`/experience/4`}><p id={4}>USDA</p></Link>
+                        <Link to={`/experience/5`}><p id={5}>Research Foundation in Tropical Diseases</p></Link> 
                     </div>
+                    <h1>Leadership</h1>    
                     <div>
-                        Leadership
-                        <Link to={`/experience/6`}><p>Executive DEI Council</p></Link>
-                        <Link to={`/experience/7`}><p>Represented and led gender+ and disability community ERGs</p></Link>  
+                        <Link to={`/experience/6`}><p id={6}>Executive DEI Council</p></Link>
+                        <Link to={`/experience/7`}><p id={7}>Represented and led gender+ and disability community ERGs</p></Link>  
                     </div>
+                    <h1>Volunteer</h1>    
                     <div>
-                        Volunteer
-                        <Link to={`/experience/8`}><p>Ada Developers Academy</p></Link>
-                        <Link to={`/experience/9`}><p>Shelter in Code</p></Link>
-                        <Link to={`/experience/10`}><p>Pacific Science Center</p></Link>
+                        <Link to={`/experience/8`}><p id={8}>Ada Developers Academy</p></Link>
+                        <Link to={`/experience/9`}><p id={9}>Shelter in Code</p></Link>
+                        <Link to={`/experience/10`}><p id={10}>Pacific Science Center</p></Link>
                     </div>
                 </nav>
                
                 <div className='exp-cards-container'>
-                    <Routes>
-                        {
-                            ExperienceData && ExperienceData.map(job => (
-                                <Route key={job.id} path={`/experience/${job.id}`} element={<ExperienceCard title={job.title} company={job.company} tenure={job.tenure} duties={job.duties}/>}/>
-                            ))
-                        }
-                        
-                    </Routes>
+                    {
+                        !clicked
+                        ? <ExperienceCard title={clickedJob.title} company={clickedJob.company} tenure={clickedJob.tenure} duties={clickedJob.duties}/>
+                        : <Routes> <Route key={clickedJob.id} path={`/experience/${clickedJob.id}`} element={<ExperienceCard title={clickedJob.title} company={clickedJob.company} tenure={clickedJob.tenure} duties={clickedJob.duties}/>}/> </Routes>
+                    }
                 </div>
             </div>
         </div>
