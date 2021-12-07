@@ -130,27 +130,27 @@ export const ExperienceData = [
 export const ProjectData = [
     {
         id: 1,
-        title: "project 1",
-        photo: "https://i.imgur.com/8AxWz68m.png",
+        title: "Project Title",
+        photo: "https://i.imgur.com/K4naZXH.png",
         link: "https://github.com/Ada-C11/ride-share-rails/pull/10",
-        description: "blah blah",
-        technologies: "react and such"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et nunc quis ex gravida auctor volutpat at turpis. Proin ut augue ac enim tincidunt facilisis. Proin rutrum arcu vitae ultrices lobortis. Integer metus metus, consectetur ac aliquam sit amet, ullamcorper id nulla.",
+        technologies: "React, JS, Rails"
     },
     {
         id: 2,
-        title: "project 2",
-        photo: "https://i.imgur.com/8AxWz68m.png",
+        title: "Project Title",
+        photo: "https://i.imgur.com/K4naZXH.png",
         link: "https://laneia-media-ranker.herokuapp.com/",
-        description: "blah blah",
-        technologies: "react and such"
+        description: "Etiam ac sem at lectus sodales euismod vel eget velit. Pellentesque sed consequat magna. Nam quam nibh, dapibus et augue ac, vehicula venenatis eros. Sed quis felis eu elit accumsan congue. Integer tempor finibus dui quis tincidunt. Donec fringilla iaculis tortor, in ornare arcu malesuada eu.",
+        technologies: "React, JS, Rails"
     },
     {
         id: 3,
-        title: "project 3",
-        photo: "https://i.imgur.com/8AxWz68m.png",
+        title: "Project Title",
+        photo: "https://i.imgur.com/K4naZXH.png",
         link: "https://tricksy.herokuapp.com/",
-        description: "blah blah",
-        technologies: "react and such"
+        description: "Proin malesuada arcu quis ante efficitur, sed lacinia leo aliquet. Sed gravida odio a suscipit vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec in purus condimentum, sodales eros quis, interdum orci.",
+        technologies: "React, JS, Rails"
     }
 ]
 

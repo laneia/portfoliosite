@@ -301,43 +301,76 @@ h1 {
 
 /* Projects page styles */
 #projects {
-  height: 100vh;
+  margin: 2em 0;
 }
 
 .project-card {
-  /* display: flex; */
-  width: 90%;
-  margin: 2em auto
+  display: flex;
+  background-color: rgb(207, 196, 130, 0.3);
+  border-radius: 5px;
+  width: 50%;
+  height: 500px;
+  margin: 2em auto;
+  padding:0.5em;
 }
 
-.project-img-cont {
-  width: 90%;
-  margin: 0 auto;
+.project-wrapper {
   position: relative;
-  border-radius: 5px;
+  display: flex;
+  width: 100%;
 }
 
-.project-img-cont img{
-  height: 350px;
-  width: 60%;
-  border-radius: 5px;
+.project-wrapper img {
   position: absolute;
-  top:0;
-  left:0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  inset: 0;
+  top: 0;
+  left: 0;
+}
+
+.project-wrapper a {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .project-details {
-  border: 2px solid #D7B554;
-  border-radius: 3px;
-  /* height: 100%; */
-  width: 50%;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 10;
-  top:0;
-  right:0;
-
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
+.project-details h1 {
+  color: #D7B554;
+}
+
+.project-details:hover {
+  opacity: 1;
+}
+
+.technologies {
+  font-size: 24pt;
+  color: white;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: #D7B554 2px solid;
+}
+
+.description {
+  font-weight: bold;
+  color:rgb(207, 196, 130);
+  text-align: left;
+  margin: 0.5em;
+}
 
 
 /* Contact page styles */
