@@ -2,21 +2,24 @@
   box-sizing: border-box;
   text-align: center;
 }
+
 .App {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-
-
 .bottom-app {
   display: flex;
   width: 100%;
 }
 
-main {
+#main {
   width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22pt;
+  color: whitesmoke;
+  background-color: rgb(0, 0, 0, 0.9);
 }
 
 a {
@@ -25,6 +28,42 @@ a {
 
 h1 {
   font-family: 'Roboto Slab', serif;
+  color:rgb(207, 196, 130);
+}
+
+#landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: sticky;
+  top: 40%;
+  left: 50%; */
+  margin-top: -10%;
+  height: 100%;
+}
+
+.rolling-header {
+  font-size: 60pt;
+  font-style: italic;
+  margin: 0.5em;
+}
+
+.rolling-wrapper {
+  border-bottom: #D7B554 5px solid;
+}
+
+.landing-name {
+  margin-top: 3em;
+  font-family: 'Patua One', cursive;
+  font-size: 84px;
 }
 
 /* Experience page styles */
@@ -81,7 +120,6 @@ h1 {
 }
 
 .top-left-nav {
-  margin-left: 1em;
   display: flex;
   align-items: center;
 }
@@ -96,7 +134,7 @@ h1 {
 
 .top-left-nav img{
   width: 100px;
-  margin: .5em 0;
+  margin: 1em 0;
 }
 
 .top-right-nav {
@@ -137,10 +175,8 @@ h1 {
 
 /* SideNav styles */
 .side-nav-container {
-  top: 75%;
   width: 5%;
-  height: 100%;
-  position: sticky;
+  background-color: black;
 }
 
 .side-nav-wrap {
@@ -149,6 +185,8 @@ h1 {
 }
 
 .side-nav {
+  position: sticky;
+  top: 75%;
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
@@ -166,7 +204,7 @@ h1 {
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  color: black;
+  color: #D7B554;
 }
 
 /* About page styles */
@@ -195,11 +233,18 @@ h1 {
 .profile-info {
   width: 65%;
   margin: auto 1em;
+  margin-right: 4em;
+  align-self: left;
+}
+
+.profile-info p {
+  display: inline-block;
+  text-align: left;
 }
 
 .profile-container {
   margin: auto 1em;
-  border: 4px solid black;
+  border: 4px solid #D7B554;
   border-radius: 3%;
   width: 300px;
   position: relative;

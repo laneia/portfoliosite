@@ -21,7 +21,7 @@ function App() {
 
       <div className="bottom-app">
         <SideNav />
-        <main>
+        <main id="main">
           <Landing/>
           <About/>
           <Experience/>
