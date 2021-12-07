@@ -22,7 +22,6 @@ const overlay = (
 const current = (
   <div className="App">
     <TopNav />
-
     <div className="bottom-app">
       <SideNav />
       <main id="main">
