@@ -6,7 +6,6 @@
 .App {
   width: 100%;
   height: 100%;
-  /* position: relative; */
 }
 
 .bottom-app {
@@ -20,6 +19,32 @@
   font-size: 22pt;
   color: whitesmoke;
   background-color: rgb(0, 0, 0, 0.9);
+}
+
+input:focus {
+  outline-style: outset;
+  outline-color: black;
+  outline-width: 4px;
+}
+textarea:focus {
+  outline-style: outset;
+  outline-color: black;
+  outline-width: 4px;
+}
+
+button {
+  width: 80%;
+  margin: auto;
+  padding: 0.2em;
+  font-size: 22px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px white;
 }
 
 a {
@@ -79,7 +104,7 @@ h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   padding: .4em;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .top-right-nav :last-child {
@@ -274,10 +299,98 @@ h1 {
 }
 
 
-/* Contact page styles */
-.form-container form {
-  margin: 1em auto;
+/* Projects page styles */
+#projects {
+  height: 100vh;
+}
+
+.project-card {
+  /* display: flex; */
   width: 90%;
+  margin: 2em auto
+}
+
+.project-img-cont {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+}
+
+.project-img-cont img{
+  height: 350px;
+  width: 60%;
+  border-radius: 5px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.project-details {
+  border: 2px solid #D7B554;
+  border-radius: 3px;
+  /* height: 100%; */
+  width: 50%;
+  position: absolute;
+  z-index: 10;
+  top:0;
+  right:0;
+
+}
+
+
+
+/* Contact page styles */
+.form-container {
+  height: 70vh;
+  width: 50%;
+  margin: 25vh auto 10vh auto;
+}
+
+.form-container form {
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 1em 2em;
+  background-color:rgba(215, 181, 84, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.form-container form h2{
+  margin: 0;
+  font-size: 35px;
+}
+
+.form-container form div{
+  margin: 0.5em auto;
+  width: 80%;
+  text-align: left;
+}
+
+.form-container form label{
+  font-size: 20px;
+}
+
+.form-container form input{
+  text-align: left;
+  height: 2em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+.form-container form textarea{
+  text-align: left;
+  height: 12em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  resize: none;
+}
+.form-container form input,textarea{
+
+  width: 100%;
+  font-size: 18px;
 }
 
 
