@@ -214,10 +214,10 @@ h1 {
 
 /* landing animation styles */
 .landing-overlay {
-  -webkit-animation: landing-animation 3s 1;
-  -moz-animation: landing-animation 3s 1;
-  -o-animation: landing-animation 3s 1;
-  animation: landing-animation 3s 1;
+  -webkit-animation: landing-animation 3.7s 1;
+  -moz-animation: landing-animation 3.7s 1;
+  -o-animation: landing-animation 3.7s 1;
+  animation: landing-animation 3.7s 1;
   position: fixed;
   z-index: 30;
   width: 100%;
@@ -225,6 +225,7 @@ h1 {
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -236,10 +237,10 @@ h1 {
 
 
 .owl-overlay {
-  -webkit-animation: img-animation 0.7s 4, img-away 3s 1;
-  -moz-animation: img-animation 0.7s 4, img-away 3s 1;
-  -o-animation: img-animation 0.7s 4, img-away 3s 1;
-  animation: img-animation 0.7s 4, img-away 3s 1;
+  -webkit-animation: img-animation 0.9s 4, img-away 3.7s 1;
+  -moz-animation: img-animation 0.9s 4, img-away 3.7s 1;
+  -o-animation: img-animation 0.9s 4, img-away 3.7s 1;
+  animation: img-animation 0.9s 4, img-away 3.7s 1;
   height: 350px;
   width: 350px;
   background-position: center center;
@@ -248,11 +249,11 @@ h1 {
 }
 
 @keyframes img-animation {
-  from { box-shadow: 0 0 20px black; border-radius: 50%;}
-  to { box-shadow: 0 0 25px #D7B554; border-radius: 50% }
+  from { box-shadow: 0 0 40px white; border-radius: 50%;}
+  to { box-shadow: 0 0 50px white; border-radius: 50% }
 }
 
 @keyframes img-away {
   from {background-image: url(https://i.imgur.com/Uf8BHkx.png); }
-  to { background-image: none; display: none; visibility: hidden; }
+  to { background-image: url(https://i.imgur.com/Uf8BHkx.png); display: none; visibility: hidden; }
 }
