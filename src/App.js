@@ -12,7 +12,13 @@ import TopNav from './components/TopNav';
 function App() {
   return (
     <div className="App">
+      <div className="landing-overlay">
+        <div className="owl-overlay"></div>
+      </div>
+      
+
       <TopNav />
+
       <div className="bottom-app">
         <SideNav />
         <main>
@@ -23,7 +29,7 @@ function App() {
           <Projects/>
           <Contact/>
         </main>
-      </div>
+      </div>  
     </div>
   );
 }

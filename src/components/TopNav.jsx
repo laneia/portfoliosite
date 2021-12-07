@@ -3,9 +3,12 @@ const TopNav = () => {
     return (
         <div className="top-nav">
             <div className="top-nav-wrap">
-                <div className='top-left-nav'>
-                    <a href="/"><img src="https://i.imgur.com/lMuekL1.jpg" alt="owl"/></a>
-                </div>
+                <a href="/">
+                    <div className='top-left-nav'>
+                        <img src="https://i.imgur.com/lMuekL1.jpg" alt="owl"/>
+                        <p>Laneia Murray</p>
+                    </div>
+                </a>
                 <nav className='top-right-nav'>
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
