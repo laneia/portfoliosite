@@ -219,7 +219,7 @@ h1 {
   -o-animation: landing-animation 3.7s 1;
   animation: landing-animation 3.7s 1;
   position: fixed;
-  z-index: 30;
+  /* z-index: 30; */
   width: 100%;
   height: 100vh;
   top: 0;
@@ -231,8 +231,8 @@ h1 {
 }
 
 @keyframes landing-animation {
-  from { background-color: black;}
-  to { background-color: black; display: none; visibility: hidden;}
+  from { background-color: black; z-index:30;}
+  to { background-color: black; z-index: 30; display: none; visibility: hidden;}
 }
 
 
