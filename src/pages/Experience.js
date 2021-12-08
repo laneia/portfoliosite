@@ -34,7 +34,7 @@ const Experience = () => {
                     <h1>Leadership</h1>    
                     <div>
                         <Link to={`/experience/6`}><p id={6}>Executive DEI Council</p></Link>
-                        <Link to={`/experience/7`}><p id={7}>Represented and led gender+ and disability community ERGs</p></Link>  
+                        <Link to={`/experience/7`}><p id={7}>2 x ERG Leader</p></Link>  
                     </div>
                     <h1>Volunteer</h1>    
                     <div>

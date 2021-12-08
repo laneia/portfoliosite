@@ -53,7 +53,8 @@ a {
 
 h1 {
   font-family: 'Roboto Slab', serif;
-  color:rgb(207, 196, 130);
+  color: #D7B554;
+  /* color:rgb(207, 196, 130); */
 }
 
 
@@ -194,6 +195,7 @@ h1 {
 }
 
 /* About page styles */
+
 #about > div {
   display: flex;
   width: 85%;
@@ -207,6 +209,7 @@ h1 {
 }
 .profile-container img {
   border: 4px solid #D7B554;
+  /* #D7B554 */
   border-radius: 3%;
   height: 100%;
   width: 100%;
@@ -250,18 +253,22 @@ h1 {
   width: 80%;
   margin: 3em auto;
   padding: 1em;
-  border: 3px solid rgba(215, 181, 84, 0.5);
+  border: 3px solid #D7B554;
   border-radius: 10px;
 } 
 .experience-container h1 {
   font-size: 30px;
   margin-bottom: 0.5em;
+  text-align: left;
+  /* text-decoration: underline; */
+  border-bottom: rgba(215, 181, 84) 1px solid;
 }
 .experience-container p, li {
   font-size: 20px;
   margin: 0.3em;
   color: white;
   padding: .1em;
+  text-align: left;
 }
 
 .experience-container nav p:hover {
@@ -271,12 +278,37 @@ h1 {
 }
 
 .exp-cards-container {
-  width: 50%;
-  margin-left: 2em;
+  width: 75%;
+  margin-left: 0;
   border-radius: 10px;
   padding: 1em;
-  background-color:rgba(215, 181, 84, 0.4);
+  background-color: rgba(255, 255, 255, 0.31);
 }
+
+.experience-card-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.experience-card-wrapper ul li {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  gap: 1.75em;
+  align-items: start;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.experience-card-wrapper ul li:before {
+  content: url(https://i.imgur.com/Uf8BHkx.png?2);
+  /* Make slightly larger than the li font-size
+  but smaller than the li gap */
+  font-size: 1.25em;
+}
+
 
 /* Skills page styles */
 .skills-container {
@@ -384,7 +416,7 @@ h1 {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 1em 2em;
-  background-color:rgba(215, 181, 84, 0.4);
+  background-color:rgba(255, 255, 255, 0.31);;
   width: 100%;
   height: 100%;
 }

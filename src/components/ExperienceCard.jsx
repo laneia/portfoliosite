@@ -1,7 +1,7 @@
 const ExperienceCard = ({title, company, tenure, duties}) => {
 
     return (
-        <div>
+        <div className="experience-card-wrapper">
             <h1>{title} @ {company}</h1>
             <p>{tenure}</p>
             <ul>
